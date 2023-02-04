@@ -1,10 +1,11 @@
-# Definir una función max() que tome como argumento dos números
-# y devuelva el mayor de ellos. (No utilizar la funcion max propia de
-# Python)
-
 """
-Return max value between 2 numbers
+Definir una función max() que tome como argumento dos números
+y devuelva el mayor de ellos. (No utilizar la funcion max propia de
+Python)
 
+Return max value between 2 numbers
+Previously, check that both parameters are int
+---
 Parameters
 
 a = integer , b = integer
@@ -13,7 +14,8 @@ return integer
 
 """
 
-def max(a,b):
+def funcion_alt_max(a,b):
+    # Comprueba valores int
     try:
         int(a)
         int(b)
@@ -21,5 +23,8 @@ def max(a,b):
     except ValueError:
         tryinteger = False
 
-    #if tryinteger = True
-    return tryinteger  
+    if a > b:
+        return a
+    else:
+        return b
+
